@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Love</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark My-nav">
+            <a class="navbar-brand" href="./index.html">VT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link Mylink" href="./index.html">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link Mylink" href="#">About us</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link Mylink" href="#footer">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+      </nav>
+    </header>
+    
+    <div class="container-fluid">
+    <main>
+      <div class="row">
+          <div class="col-lg-6 order-lg-last Mycol">
+              <img class="image" src="./Image/image1.png" alt="Foreimage">
+          </div>
+          <div class="col-lg-6 Mycol1">
+              <h4>Your Information</h4>
+              <form class="needs-validation" novalidate="">
+                  <div class="row">
+                      <div class="col-sm-6 Myinfo">
+                          <label for="firstName" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                          <div class="invalid-feedback">
+                              Valid first name is required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 Myinfo">
+                          <label for="lastName" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                          <div class="invalid-feedback">
+                              Valid last name is required.
+                          </div>
+                      </div>
+
+                      <label class="form-label">Date of Birth</label>
+                      <div class="col-sm-4 Myinfo">
+                          <input type="text" class="form-control" id="day" placeholder="DD" value="" required="">
+                          <div class="invalid-feedback">
+                              Valid Day is required.
+                          </div>
+                      </div>
+                      <div class="col-sm-4 Myinfo">
+                          <input type="text" class="form-control" id="month" placeholder="MM" value="" required="">
+                          <div class="invalid-feedback">
+                              Valid Month is required.
+                          </div>
+                      </div>
+                      <div class="col-sm-4 Myinfo">
+                          <input type="text" class="form-control" id="year" placeholder="YYYY" value="" required="">
+                          <div class="invalid-feedback">
+                              Valid Year is required.
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-sm-6 Myinfo">
+                              <label for="" class="form-label">Choose Gender</label>
+                              <select class="form-select" id="gender" required="">
+                                  <option value="">Choose...</option>
+                                  <option>Male</option>
+                                  <option>Female</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                  Please select a valid Gender.
+                              </div>
+                          </div>
+
+                          <div class="col-sm-6 Myinfo">
+                            <label for="country" class="form-label">Choose your country</label>
+                            <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>Phnom Penh</option>
+                                <option>Banteay Meanchey </option>
+                                <option>Battambang</option>
+                                <option>Kampong Cham</option>
+                                <option>Kampong Chhnang</option>
+                                <option>Kampong Speu</option>
+                                <option>Kampong Thom</option>
+                                <option>Kampot</option>
+                                <option>Kandal</option>
+                                <option>Koh Kong</option>
+                                <option>Kep</option>
+                                <option>Kratié</option>
+                                <option>Mondulkiri</option>
+                                <option>Oddar Meanchey</option>
+                                <option>Pailin</option>
+                                <option>Preah Sihanouk</option>
+                                <option>Preah Vihear</option>
+                                <option>Pursat</option>
+                                <option>Prey Veng</option>
+                                <option>Ratanakiri</option>
+                                <option>Siem Reap</option>
+                                <option>Stung Treng</option>
+                                <option>Svay Rieng</option>
+                                <option>Takéo</option>
+                                <option>Tbong Khmum</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid Country.
+                            </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+                  <button class="btn btn-danger btn-lg submitBtn">Submit</button>
+                  <a href="https://theavinven.github.io/MyWebsite/MyLove.html" id="Mylove"></a>
+                  <a href="https://theavinven.github.io/MyWebsite/Welcome.html" id="Welcome"></a>
+
+              </form>
+          </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  </div>
+
+  <footer id="footer">
+    <a href="https://web.facebook.com/theavin.ven.3"><i class="fab fa-facebook-square social-icon fa-2x"></i></a>
+    <a href="https://www.instagram.com/theavin_tulips/"><i class="fab fa-instagram social-icon fa-2x"></i></a>
+    <!-- <a href="https://twitter.com/SethyRung"><i class="fab fa-twitter-square social-icon fa-2x"></i></a> -->
+    <a href="mailto:ventheavin19@gmail.com"><i class="fas fa-envelope social-icon fa-2x"></i></a>
+    <p>© Copyright 2021 VT</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="./JavaScript/Script.js"></script>
+
+</body>
+</html>
